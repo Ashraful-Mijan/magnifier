@@ -41,7 +41,7 @@ export default defineConfig({
     // This enables Vite's library mode
     lib: {
       entry: resolve(__dirname, 'src/lib/Magnifier.jsx'),
-      name: 'react-image-zoom-magnifier',
+      name: 'Magnifier',
       // The formats to output. 'es' is for ES Modules, 'umd' is for CommonJS/global.
       formats: ['es', 'umd'],
       fileName: (format) => `Magnifier.${format}.js`,
