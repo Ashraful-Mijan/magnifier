@@ -44,12 +44,12 @@ export default defineConfig({
       name: 'react-image-zoom-magnifier',
       // The formats to output. 'es' is for ES Modules, 'umd' is for CommonJS/global.
       formats: ['es', 'umd'],
-      fileName: (format) => `react-image-zoom-magnifier.${format}.js`,
+      fileName: (format) => `Magnifier.${format}.js`,
     },
     rollupOptions: {
       // Make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: ['react', "lodash.debounce", "lodash.throttle"],
+      external: ['react', 'react-dom', "lodash.debounce", "lodash.throttle"],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps

@@ -1,27 +1,22 @@
 {
   "name": "react-image-zoom-magnifier",
-  "private": true,
   "version": "1.0.0",
-  "type": "module",
   "keywords": [
     "react",
     "vite",
-    "component"
+    "component",
+    "magnifier",
+    "react-magnifier"
   ],
   "author": "Ashraful Mijan",
   "license": "MIT",
   "description": "simple react image glass magnifier",
-  "main": "./dist/react-image-zoom-magnifier.umd.js",
-  "module": "./dist/react-image-zoom-magnifier.es.js",
   "files": [
-    "dist"
+    "./dist/"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/react-image-zoom-magnifier.es.js",
-      "require": "./dist/react-image-zoom-magnifier.umd.js"
-    }
-  },
+  "main": "./dist/Magnifier.js",
+  "module": "./dist/Magnifier.es.js",
+  "types": "./dist/Magnifier.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -35,13 +30,11 @@
     "react-dom": "^19.1.1"
   },
   "dependencies": {
-    "@vituum/vite-plugin-postcss": "^1.1.0",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "sass": "^1.90.0",
-    "vite-plugin-dts": "^4.5.4"
+    "sass": "^1.90.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
