@@ -40,7 +40,8 @@
     "lodash.throttle": "^4.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "sass": "^1.90.0"
+    "sass": "^1.90.0",
+    "vite-plugin-dts": "^4.5.4"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
