@@ -35,6 +35,7 @@
     "react-dom": "^19.1.1"
   },
   "dependencies": {
+    "@vituum/vite-plugin-postcss": "^1.1.0",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "react": "^19.1.1",
