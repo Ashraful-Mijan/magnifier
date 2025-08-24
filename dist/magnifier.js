@@ -379,5 +379,5 @@ const ve = ({
   );
 };
 export {
-  ve as default
+  ve as Magnifier
 };

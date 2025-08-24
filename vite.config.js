@@ -5,10 +5,11 @@ import postcss from '@vituum/vite-plugin-postcss';
 import dts from 'vite-plugin-dts';
 
 // https://vite.dev/config/
+import { resolve } from 'node:path';
 import path from 'node:path';
-import { resolve } from 'path';
 import { fileURLToPath } from 'node:url';
 import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
+
 const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
@@ -40,11 +41,12 @@ export default defineConfig({
   build: {
     // This enables Vite's library mode
     lib: {
-      entry: resolve(__dirname, 'src/lib/Magnifier.jsx'),
+      entry: resolve(__dirname, 'src/lib/main.js'),
       name: 'Magnifier',
       // The formats to output. 'es' is for ES Modules, 'umd' is for CommonJS/global.
-      formats: ['es', 'umd'],
-      fileName: (format) => `Magnifier.${format}.js`,
+      // formats: ['es', 'umd'],
+      // fileName: '(format) => `Magnifier.${format}.js`',
+      fileName: 'magnifier',
     },
     rollupOptions: {
       // Make sure to externalize deps that shouldn't be bundled

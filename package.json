@@ -1,5 +1,6 @@
 {
-  "name": "react-image-zoom-magnifier",
+  "name": "magnifier",
+  "type": "module",
   "version": "1.0.0",
   "keywords": [
     "react",
@@ -12,11 +13,17 @@
   "license": "MIT",
   "description": "simple react image glass magnifier",
   "files": [
-    "./dist/"
+    "dist"
   ],
-  "main": "./dist/Magnifier.js",
-  "module": "./dist/Magnifier.es.js",
-  "types": "./dist/Magnifier.d.ts",
+  "main": "./dist/magnifier.umd.cjs",
+  "module": "./dist/magnifier.js",
+  "exports": {
+    ".": {
+      "import": "./dist/magnifier.js",
+      "require": "./dist/magnifier.umd.cjs"
+    },
+    "./style.css": "./dist/magnifier.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
